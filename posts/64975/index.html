@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="keywords" content="">
+<meta name="description" content="Hexo 全套介绍什么是Hexo ?  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  搭建前的环境准备 到官网下载对应的安装包安装即可 - nodejs 简单的说 Node.js 就是运行在服务端的 JavaScript。 - git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo全套介绍">
+<meta property="og:url" content="http://example.com/posts/64975/index.html">
+<meta property="og:site_name" content="如影随形">
+<meta property="og:description" content="Hexo 全套介绍什么是Hexo ?  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  搭建前的环境准备 到官网下载对应的安装包安装即可 - nodejs 简单的说 Node.js 就是运行在服务端的 JavaScript。 - git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到">
+<meta property="og:locale">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/c408549855374350ad5484f9ee8b492f">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/70096b81d8ac48e5b2f14a5906d5a998">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/eb7e7ac7c58d4daf80e69a687acfd183">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/fef53b3fc4484099b587dbce3d60fb16">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/7ca9bc6e9f98489ba1501aae82e2823d">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/fcfb7c0b7a8c49768aed31c8f3287c05">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/26ff0fbd8cc84ad89900bdfab2adfcd8">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/863492e7bf014b889454a5de0da480aa">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/8e433c40388e4d2485807970ad86cae6">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/0a5c0ab8958948d5a80b0f9ad6ce2467">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/77e0ec8b15d84c1fb3711949a030ca93">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/27ea773422b145a5b5b934ec9886c6c9">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/4f74d88ad7274c9bbc286f34e1de502a">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/f8c67aeefa884c4f839e133a7cc7768f">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/af20b749e98447a0a91d676d333ca2af">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/8b398b3241454fe0a703a307dc013bd0">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/126a121bea1c4946b95d124d17fb32b9">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/d3f3af6dd4444695a62beb7dd04fd4e4">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/bc81cf2d9e244882bbb772277b0163bb">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/c5331a9e43094d4dacf297a7aa26704b">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/8a37c7d1d55f41e78bd754c5a596900b">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/5040ec35377649329cc508d589e50174">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/2ccf6bdeaf7a4dab83c9951db930dd05">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/6021ece6db5a41bb842d2c5e8cb8dc8b">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/689d2e88e50b4c1ea5b932525fa80873">
+<meta property="og:image" content="https://s1.vika.cn/space/2022/09/14/e4ec3340ad23499d8910e9dae0a98c40">
+<meta property="article:published_time" content="2022-09-14T12:43:42.000Z">
+<meta property="article:modified_time" content="2022-09-14T14:40:56.860Z">
+<meta property="article:author" content="CoCo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.vika.cn/space/2022/09/14/c408549855374350ad5484f9ee8b492f">
+
+
+<title >Hexo全套介绍</title>
+
+<!-- Favicon -->
+
+    <link href='https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df?v=v1.1.2' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df?v=v1.1.2' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+    <link href='/apple-touch-icon.png?v=v1.1.2' rel='apple-touch-icon' sizes='180x180' ></link>
+
+
+    <link href='/site.webmanifest' rel='manifest' ></link>
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+
+    
+
+    
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.TYPED_TEXT=[
+  "Web Developer"
+]</script>
+<script>window.FAVICON={
+  "logo": "https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df",
+  "icon16": "https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df",
+  "icon32": "https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df",
+  "appleTouchIcon": "apple-touch-icon.png",
+  "webmanifest": "/site.webmanifest",
+  "visibilitychange": true,
+  "hidden": "failure.ico",
+  "showText": "(/≧▽≦/)咦！又好了！",
+  "hideText": "(●—●)喔哟，崩溃啦！",
+  "show_text": "(/≧▽≦/)咦！又好了！",
+  "hide_text": "(●—●)喔哟，崩溃啦！"
+}</script>
+<script>window.THEME_VERSION='v1.1.2'</script>
+<script>window.THEME={
+  "switch": true,
+  "default": "style-light"
+}</script>
+
+<!-- Theme mode css -->
+
+    <link data-theme-type="style-light" rel="stylesheet" href="/css/style-light.css?v=v1.1.2" id="trm-switch-style">
+    <link data-theme-type="style-dark" rel="stylesheet" href="/css/style-dark.css?v=v1.1.2" id="trm-switch-style">
+    <script>
+        let catchMode = localStorage.getItem('theme-mode') || THEME.default;
+        let themeMode = catchMode === 'style-dark' ? 'style-light' : 'style-dark';
+        let linkdom = document.querySelector('[data-theme-type='+themeMode+']');
+        if(linkdom) linkdom.remove();
+    </script>
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" data-scroll-container style="opacity: 0">
+          <div data-scroll-section id="content" class="trm-scroll-section">
+            <!-- top bar -->
+            <div class="trm-top-bar" data-scroll data-scroll-sticky data-scroll-target="#content" data-scroll-offset="-10">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+			<a href="/" class="trm-logo-frame trm-anima-link">
+				
+					<img src="https://s1.vika.cn/space/2022/09/10/ec990a0381364416bf799dbf689996df" alt="logo">
+				
+				<div class="trm-logo-text">
+					法尔
+					<span>叶修</span>
+				</div>
+			</a>
+			<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+
+			<!-- menu -->
+			<div class="trm-menu">
+				<nav>
+					<ul>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/" target="">
+								主页
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a data-no-swup href="/archives/" target="">
+								归档
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/links/" target="">
+								友链
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/about/" target="">
+								关于
+							</a>
+							
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+			<!-- menu end -->
+			
+			<!-- mode switcher place -->
+			
+			<div class="trm-mode-switcher-place">
+				<!-- <div class="trm-hidden-switcher"> -->
+					<div class="trm-mode-switcher">
+					  <i class="far fa-sun"></i>
+					  <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+					  <label class="trm-swich" for="trm-swich"></label>
+					  <i class="far fa-moon"></i>
+					</div>
+				  <!-- </div> -->
+			</div>
+			
+			<!-- mode switcher place end -->
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</div>
+            <!-- top bar end -->
+
+            <!-- body -->
+            <div class="trm-content-start">
+
+    <!-- banner -->
+    
+    <div class="trm-banner" data-scroll data-scroll-direction="vertical">
+    
+    <!-- banner cover -->
+    <img src="/img/banner.png" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container" data-scroll data-scroll-direction="vertical" data-scroll-speed="0">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            Hexo全套介绍
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        posts
+                                    </span
+                                ></li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <a href="#about-triger" data-scroll-to="#about-triger" data-scroll-offset="-130" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </a>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 hidden-sm">
+                <!-- main card -->
+                <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card" data-scroll data-scroll-repeat data-scroll-sticky data-scroll-target="#content" data-scroll-offset="60"> 
+    
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20"><img class="trm-avatar" src="https://s1.vika.cn/space/2022/09/11/3aad1482d3614342af040d412e6ab842" alt="Avatar"> </div>
+    <h5 class="trm-name trm-mb-15">
+        如影随形
+    </h5>
+    
+    <div class="trm-label">
+        I`m
+        <span class="trm-typed-text">
+            <!-- Words for theme.user.typedText -->
+        </span>
+    </div>
+    
+</div>
+<!-- card header end -->
+
+<!-- sidebar social -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+<!-- sidebar social end -->
+
+<!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                火星
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                18
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                其他:
+            </div>
+            <div class="trm-label trm-label-light">
+                xx
+            </div>
+        </li>
+    
+</ul>
+
+<!-- info end -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<!-- action button -->
+<div class="text-center">
+    <a href="mailto:admin@imalun.com" class="trm-btn">
+        联系我
+        <i class="far fa-envelope"></i>
+    </a>
+</div>
+<!-- action button end -->
+
+    
+    </div>
+</div>
+                <!-- main card end -->
+            </div>
+            <div class="col-lg-8">
+                <!-- content -->
+                <div class="trm-content" id="trm-content">
+                    <div data-scroll data-scroll-repeat data-scroll-offset="500" id="about-triger"></div>
+                    
+                    <div class="row hidden-sm">
+                        <div class="col-sm-4">
+                            <div class="trm-card trm-label trm-label-light text-center">
+                                <i class="far fa-calendar-alt trm-icon"></i><br>
+                                09/14
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="trm-card trm-label trm-label-light text-center">
+                                <i class="far fa-clock trm-icon"></i><br>
+                                08:43
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="trm-card trm-label trm-label-light text-center">
+                                <i class="far fa-user trm-icon"></i><br>
+                                如影随形
+                            </div>
+                        </div>
+                    </div>
+
+                    <article class="trm-card trm-publication">
+                        <h3 id="Hexo-全套介绍"><a href="#Hexo-全套介绍" class="headerlink" title="Hexo 全套介绍"></a>Hexo 全套介绍</h3><p>什么是Hexo ?</p>
+<ol>
+<li>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</li>
+</ol>
+<h3 id="搭建前的环境准备"><a href="#搭建前的环境准备" class="headerlink" title="搭建前的环境准备"></a>搭建前的环境准备</h3><ol>
+<li>到官网下载对应的安装包安装即可 - nodejs 简单的说 Node.js 就是运行在服务端的 JavaScript。 - git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理，hexo主要使用github作为代码托管平台 - vscode用于编辑代码。</li>
+</ol>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><ol>
+<li>有了上述的环境，就可以直接安装hexo的框架环境，只需要使用包管理命令安装即可，同时因为我们安装了git工具，这时候右键就可以打开git bash，会出现git的终端，然后执行下面的命令安装即可。</li>
+<li>其中，-g 代表全局进行安装<br>.npm install -g hexo-cli<br>•	NPM是是一个NodeJS包管理和分发工具，已经成为了非官方的发布Node模块（包）的标准</li>
+</ol>
+<h3 id="初始化博客目录"><a href="#初始化博客目录" class="headerlink" title="初始化博客目录"></a>初始化博客目录</h3><ol>
+<li><p>有了上述的hexo框架，执行下列命令，Hexo 将会在指定文件夹中进行初始化，生成一个基础博客目录</p>
+</li>
+<li><p>hexo init 文件名</p>
+</li>
+<li><p>需要注意的是，git bash作为一个终端，是要注意路径的，例如你在桌面打开了git bash，对应的目录就会是桌面，又或者你在F盘打开了git bash，目录就会显示F: 意味着你要生成基础博客目录存放的位置 。</p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/c408549855374350ad5484f9ee8b492f" alt="图片"></p>
+</li>
+</ol>
+<h3 id="解决卡顿的工具"><a href="#解决卡顿的工具" class="headerlink" title="解决卡顿的工具"></a>解决卡顿的工具</h3><ol>
+<li><p>因为npm包管理连接较慢，所以往往这个命令会卡住不动，可以使用dev-sidecar工具</p>
+</li>
+<li><p>工具下载地址：<a target="_blank" rel="noopener" href="https://mrhuanhao.lanzoum.com/iVF0l0b52yng">https://mrhuanhao.lanzoum.com/iVF0l0b52yng</a></p>
+</li>
+<li><h4 id="如何设置"><a href="#如何设置" class="headerlink" title="如何设置"></a>如何设置</h4></li>
+<li><p>因为我的系统是Windows，所有我只演示Windows的设置</p>
+<p>\1.     第一次打开，我们要看右上角，安装根证书</p>
+<p>\2.     软件内也给出了详细的教程</p>
+<p>​        </p>
+<p>因为我们需要解决npm的问题，所以需要勾上npm（如果还是卡顿，可以使用安全模式） </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/70096b81d8ac48e5b2f14a5906d5a998" alt="图片"></p>
+</li>
+</ol>
+<h3 id="init命令详解（此处可忽略）"><a href="#init命令详解（此处可忽略）" class="headerlink" title="init命令详解（此处可忽略）"></a>init命令详解（此处可忽略）</h3><ol>
+<li>其实hexo init 这个命令，进行了两步操作 - 第一步：下载初始文件 - 第二步：安装基础的模块</li>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git">https://github.com/hexojs/hexo-starter.git</a> 目录<br> npm install</li>
+</ol>
+<h2 id="文件目录解释"><a href="#文件目录解释" class="headerlink" title="文件目录解释"></a>文件目录解释</h2><p>•      .github存放博客初始化文件的git信息，可删</p>
+<p>•       node_modules模块目录</p>
+<p>•       scaffolds存放博客生成文章、页面模板的文档</p>
+<p>•       source存放博客相关页面的目录</p>
+<p>•       themes存放主题目录（传统的博客安装方式会用到，最新的主题都用不到这个目录，因为已经改成了npm模块的安装方式）</p>
+<p>•       .gitignore git的忽略文件</p>
+<p>•       _ config.yml 存放主题的站点基本信息</p>
+<p>•       package.yml存放模块信息 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/eb7e7ac7c58d4daf80e69a687acfd183" alt="图片"></p>
+<h2 id="async主题的安装方式"><a href="#async主题的安装方式" class="headerlink" title="async主题的安装方式"></a>async主题的安装方式</h2><ol>
+<li><p>这个主题就是使用的模块安装方式hexo-theme-async代表主题的模块名字，hexo-renderer-less hexo-renderer-ejs hexo-wordcount是主题渲染需要用到的模块</p>
+</li>
+<li><p>只需要在博客目录打开git bash，执行下面的命令即可</p>
+<p>npm install –save hexo-theme-async hexo-renderer-less hexo-renderer-ejs hexo-wordcount</p>
+<h6 id="路径要注意指向博客目录"><a href="#路径要注意指向博客目录" class="headerlink" title="路径要注意指向博客目录"></a>路径要注意指向博客目录</h6><p><img src="https://s1.vika.cn/space/2022/09/14/fef53b3fc4484099b587dbce3d60fb16" alt="图片"></p>
+</li>
+</ol>
+<h5 id="由于-config-yml是站点配置文件，记录的这个博客的基本情况，我们安装了新的主题，需要去config-yml文件修改对应的主题的字段为async"><a href="#由于-config-yml是站点配置文件，记录的这个博客的基本情况，我们安装了新的主题，需要去config-yml文件修改对应的主题的字段为async" class="headerlink" title="由于_config.yml是站点配置文件，记录的这个博客的基本情况，我们安装了新的主题，需要去config.yml文件修改对应的主题的字段为async"></a>由于_config.yml是站点配置文件，记录的这个博客的基本情况，我们安装了新的主题，需要去config.yml文件修改对应的主题的字段为async</h5><p><img src="https://s1.vika.cn/space/2022/09/14/7ca9bc6e9f98489ba1501aae82e2823d" alt="图片"></p>
+<h5 id="之后运行hexo-s可以预览博客"><a href="#之后运行hexo-s可以预览博客" class="headerlink" title="之后运行hexo s可以预览博客"></a>之后运行hexo s可以预览博客</h5><h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3><ol>
+<li>其他主题如何安装 只需要在hexo的主题页面<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></li>
+<li>，找到相应的主题，打开GitHub地址（点击主题的名字），在每个主题的README都会告诉你如何安装这个主题</li>
+</ol>
+<h3 id="站点配置文件的修改"><a href="#站点配置文件的修改" class="headerlink" title="站点配置文件的修改"></a>站点配置文件的修改</h3><p>•       title：站点标题</p>
+<p>•       description：站点描述</p>
+<p>•       author：站点作者</p>
+<p>language：站点语言（根据主题而定的字段） 该主题的中文为zh-Hans </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/fcfb7c0b7a8c49768aed31c8f3287c05" alt="图片"></p>
+<h2 id="如何配置主题"><a href="#如何配置主题" class="headerlink" title="如何配置主题"></a>如何配置主题</h2><ol>
+<li><p>由于不同的主题配置方式不同，这都是根据主题作者而定，所以需要找到async主题的使用文档 &gt; <a target="_blank" rel="noopener" href="https://hexo-theme-async.imalun.com/">https://hexo-theme-async.imalun.com/</a></p>
+</li>
+<li><p>文档当中已经给出了最详细的配置教程，由于主题具有特殊性，所以不同的主题文档都是独一无二的，无法相互借鉴</p>
+</li>
+<li><p>在async主题中，指出 &gt; 在 _config.async.yml 中定义您所需要的配置,所以我们需要在博客目录创建这个文件，作为主题的配置文件，而且目前来说还是空的</p>
+</li>
+<li><p>值得注意的是，目录里面还有_config.landscape.yml这个其实是landscape主题的配置文件，也就是hexo默认主题的配置文件，可以把他删掉，不影响博客运行</p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/26ff0fbd8cc84ad89900bdfab2adfcd8" alt="图片"></p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/863492e7bf014b889454a5de0da480aa" alt="图片"></p>
+</li>
+</ol>
+<h3 id="配置示例"><a href="#配置示例" class="headerlink" title="配置示例"></a>配置示例</h3><p>1.这个主题的配置其实非常简单，所以只展示一个例子，其余的都是如此 - 例如，主题给出了用户信息的配置选项，如果你想修改，只需要复制下面给出的代码 - 上面是参数详解，下面是代码</p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/8e433c40388e4d2485807970ad86cae6" alt="图片"></p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/0a5c0ab8958948d5a80b0f9ad6ce2467" alt="图片"></p>
+<ol start="2">
+<li>直接复制到主题配置文件，就生效了，具体的参数只需要根据主题文档给出的参数详解修改即可</li>
+</ol>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://s1.vika.cn/space/2022/09/14/77e0ec8b15d84c1fb3711949a030ca93" alt="图片"></h3><p>•       又或者你要修改导航栏，也是把下面的代码复制到主题配置文件即可</p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/27ea773422b145a5b5b934ec9886c6c9" alt="图片"></p>
+<p>要注意的是，修改完对应的参数，需要执行hexo s，查看是否报错，是否本地可以预览。</p>
+<h2 id="如何上传博客进行托管"><a href="#如何上传博客进行托管" class="headerlink" title="如何上传博客进行托管"></a>如何上传博客进行托管</h2><ol>
+<li><h3 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h3><p>•       由于我们要用到github作为托管，自然先在GitHub创建一个新的仓、库即可</p>
+<p>•   创建之后，点击ssh，会出现一个git开头的地址，复制一下 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/4f74d88ad7274c9bbc286f34e1de502a" alt="图片"></p>
+</li>
+</ol>
+<p>•       然后打开你的站点配置文件_config.yml</p>
+<p>•       下面有个deploy字段，这个是用来记录你的GitHub仓库信息</p>
+<p>•        修改type为git，新增branch为main，repo就是刚刚复制的地址 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/f8c67aeefa884c4f839e133a7cc7768f" alt="图片"></p>
+<h3 id="安装上传插件"><a href="#安装上传插件" class="headerlink" title="安装上传插件"></a>安装上传插件</h3><ol>
+<li>hexo默认没有上传GitHub的功能，需要一个插件实现，也是使用npm进行安装，在博客目录下执行</li>
+<li>npm install hexo-deployer-git –save</li>
+</ol>
+<h3 id="密钥准备"><a href="#密钥准备" class="headerlink" title="密钥准备"></a>密钥准备</h3><ol>
+<li><p>github当然不允许你随便上传，所以需要一个密钥，让github知道你是这个git账户的主人，所以需要执行一个生成密钥的命令</p>
+</li>
+<li><p>ssh-keygen -t rsa -C “你的邮箱“</p>
+</li>
+<li><p>不管出现什么信息，你只需要回车就可以了，大概三个回车就创建完成了</p>
+<p>执行</p>
+<p>cat ~&#x2F;.ssh&#x2F;id_rsa.pub</p>
+<p>就可以输出你的密钥，全部复制下来</p>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://s1.vika.cn/space/2022/09/14/af20b749e98447a0a91d676d333ca2af" alt="图片"></h3></li>
+</ol>
+<h3 id="填写密钥"><a href="#填写密钥" class="headerlink" title="填写密钥"></a>填写密钥</h3><ol>
+<li><p>依次点击头像-setting-ssh and GPG kyes </p>
+<p>•       然后点击new ssh key</p>
+<p>•       粘贴你的密钥在下面，title可以随便写 </p>
+<p>•       然后点击add ssh key即可</p>
+<p>执行</p>
+<p>ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>会提示你下面这个，输入yes回车就行了</p>
+<p>Are you sure you want to continue connecting (yes&#x2F;no&#x2F;[fingerprint])?</p>
+<h3 id="正式上传"><a href="#正式上传" class="headerlink" title="正式上传"></a>正式上传</h3><p>下面这个命令代表上传博客到GitHub</p>
+<p>会使用hexo的框架能力，生成静态文件，然后上传到github</p>
+<p>hexo g -d</p>
+<h3 id="vercel-部署"><a href="#vercel-部署" class="headerlink" title="vercel 部署"></a>vercel 部署</h3><p>GitHub只是作为托管平台，使用vercel可以让你的网站在线访问</p>
+<p>需要准备一个域名，然后打开vercel，使用github账号注册即可</p>
+<p><a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></p>
+<p>然后依次点击add new - project </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/8b398b3241454fe0a703a307dc013bd0" alt="图片"></p>
+<p>选自己的github账户（如果没有就新增） 然后找到自己存放博客的仓库，点击import</p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/126a121bea1c4946b95d124d17fb32b9"></p>
+<p>点击deploy，然后等待页面刷新 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/d3f3af6dd4444695a62beb7dd04fd4e4"></p>
+</li>
+</ol>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><ol>
+<li><p>点击view domains </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/bc81cf2d9e244882bbb772277b0163bb"></p>
+</li>
+</ol>
+<p>​              输入你的域名，然后点击add即可 </p>
+<p>​           <img src="https://s1.vika.cn/space/2022/09/14/c5331a9e43094d4dacf297a7aa26704b"></p>
+<p>然后去到你的域名控制台，根据vercel的提示添加两个解析</p>
+<p>具体的记录值，需要看vercel提供的值 - 第一个是@ A记录 - 第二个是 WWW CNAME记录</p>
+<p>解析完成后，搭建基本完成 ## 命令说明</p>
+<p>hexo new #”文章名”<br> hexo new page #”页面名”<br> hexo s #预览命令<br> hexo g -d #上传命令</p>
+<p>值得注意的是hexo new page，这是生成页面的命令，默认情况下，hexo不会提供tags、about、categories、links这几个页面，所以需要单独执行生成</p>
+<p>而且这是根据主题的需要，async主题，没有单独的tags和categories页面，直接生成即可</p>
+<p>about和links页面也需要生成，但都不需要配置，因为这个主题把配置挪到了配置文件里面</p>
+<h3 id="图床的搭建"><a href="#图床的搭建" class="headerlink" title="图床的搭建"></a>图床的搭建</h3><ol>
+<li><h2 id="图床的搭建-1"><a href="#图床的搭建-1" class="headerlink" title="图床的搭建"></a>图床的搭建</h2><p>图床是用来存放图片的地方，可以上传图片返回在线地址，可以极大提高博客访问速度，同时对于markdown来说，也需要这样的工具，来插入图片</p>
+<h3 id="picgo安装"><a href="#picgo安装" class="headerlink" title="picgo安装"></a>picgo安装</h3><p>一个用于快速上传图片并获取图片 URL 链接的工具 </p>
+<p>&gt; <a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">https://github.com/Molunerfinn/PicGo</a></p>
+<h3 id="安装vika插件"><a href="#安装vika插件" class="headerlink" title="安装vika插件"></a>安装vika插件</h3><p>其实用来存放图片的地方很多，GitHub也可以存放图片，但访问速度有点慢，使用vika也是不错的方案 </p>
+<p>&gt; <a target="_blank" rel="noopener" href="https://vika.cn/">https://vika.cn/</a></p>
+<p>注意先创建一个空白的表作为图床</p>
+<p>搜索vika即可安装 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/8a37c7d1d55f41e78bd754c5a596900b"></p>
+</li>
+</ol>
+<p>​                然后进行配置 </p>
+<p>​                  <img src="https://s1.vika.cn/space/2022/09/14/5040ec35377649329cc508d589e50174"></p>
+<p>APIToken在开发者配置 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/2ccf6bdeaf7a4dab83c9951db930dd05"></p>
+<p>ID在API里面打开，点击get，datasheets后面的一小段就是ID </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/6021ece6db5a41bb842d2c5e8cb8dc8b"></p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/689d2e88e50b4c1ea5b932525fa80873"></p>
+<p>回到上传区，上面选择vika即可 </p>
+<p><img src="https://s1.vika.cn/space/2022/09/14/e4ec3340ad23499d8910e9dae0a98c40"></p>
+<p>下面的链接格式代表你想要返回的格式</p>
+<p>如果选URL，代表只返回一个单独的链接</p>
+<p>如果选markdown，会自动返回一个markdown格式的链接，可以直接粘贴进文章</p>
+<h2 id="到此就结束了"><a href="#到此就结束了" class="headerlink" title="到此就结束了"></a>到此就结束了</h2>
+                    </article>
+
+                    <!-- blog -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- title -->
+                            <h5 class="trm-mb-40 trm-title-with-divider">
+                                其他文章
+                                <span data-number="02"></span>
+                            </h5>
+                        </div>
+                        
+                        
+                            <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/posts/1/" class="trm-cover-frame trm-anima-link">
+            <img src="https://s1.vika.cn/space/2022/09/11/e2750104b4164432a2f628e4e0210c2e" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%88%90%E9%95%BF%E7%B1%BB/">
+                    成长类
+                </a>
+            </div>
+            <h5>
+                <a href="/posts/1/" class="trm-anima-link">
+                    个人成长
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/11</li>
+                <li>03:29</li>
+                
+                    <li>544</li>
+                
+                
+                    <li>1</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                    <!-- blog end -->
+
+                    
+
+                    <div class="trm-divider trm-mb-40"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
+    <div class="trm-label">
+        ©  2022- 2022 ·
+        <span class="trm-accent-color">
+            如影随形
+        </span>
+    </div>
+    <div class="trm-label">
+        博客已萌萌哒运行:
+        <span id="since" class="trm-accent-color"></span>
+        天
+    </div>
+</footer>
+<script>
+    function show_date_time () {
+        BirthDay = new Date("10/9/2022 17:00:00");
+        today = new Date();
+        timeold = (today.getTime() - BirthDay.getTime());
+        msPerDay = 24 * 60 * 60 * 1000
+        day = Math.floor(timeold / msPerDay)
+        since.innerHTML = day
+    }
+    show_date_time()
+</script>
+                    <!-- footer end -->
+                </div>
+                <!-- content end -->
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+          </div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+
+  </div>
+  <!-- app wrapper end -->
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="//cdn.jsdelivr.net/npm/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    
+<script src="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+    
+
+    
+        
+<script src="/js/plugins/typing.js"></script>
+
+    
+
+    
+
+
+
+<!-- 评论插件 -->
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<!-- Service Worker -->
+
+
+<script src="/js/main.js?v=v1.1.2"></script>
+
+
+</body>
+
+</html>
